@@ -1,0 +1,16 @@
+{
+  "name": "oureat-web",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 3000",
+    "test": "jest"
+  },
+  "author": "kyeong",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
