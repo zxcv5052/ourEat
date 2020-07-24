@@ -36,7 +36,6 @@ public class RestaurantControllerTest {
     @Test
     public void list() throws Exception {
         ArrayList<Restaurant> restaurants = new ArrayList<>();
-        restaurants.add(new Restaurant(1004L,"Bob zip","seoul"));
 
         given(restaurantService.getRestaurants()).willReturn(restaurants);
 

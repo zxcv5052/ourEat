@@ -1,35 +1,22 @@
 package com.oureatproject.domain;
 
 import lombok.Getter;
+import org.springframework.data.annotation.Persistent;
 
-import java.awt.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 @Getter
 public class Restaurant {
 
-    private final Long id;
-    private final String name;
-    private final String address;
-    private List<MenuItem> menuItems = new ArrayList<>();
-    public Restaurant(Long id, String name, String address) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-    }
+    @Id
+    private Long id;
 
-    public String getInformation(){
-        return name+" in "+address;
-    }
+    private String name;
 
-    public void addMenuItem(MenuItem menuItem) {
-        menuItems.add(menuItem);
-    }
+    private String address;
 
-    public void setMenuItems(List<MenuItem> menuItem) {
-        for(MenuItem menuItems : menuItem){
-            addMenuItem(menuItems);
-        }
-    }
 }
