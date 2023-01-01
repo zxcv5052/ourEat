@@ -10,7 +10,7 @@
   "author": "kyeong",
   "license": "ISC",
   "devDependencies": {
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.11.0"
   }
 }
